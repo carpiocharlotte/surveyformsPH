@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Survey Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <header>
+        <h1>Philippines Transportation Survey</h1>
+        <p>Take your time in answering this survey form, as you take your time commuting to work 😄</p>
+    </header>
+
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-control">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="form-control">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age" min="10" max="100"/>
+            </div>
+            <div class="form-control">
+                <label>Gender</label>
+                <label><input type="radio" name="gender" id="male"/>Male</label>
+                <label><input type="radio" name="gender" id="female"/>Female</label>
+            </div>
+            <div class="form-control">
+                <label>What is your preferred working arrangement in Philippines?</label>
+                <select name="work" id="work">
+                    <option value="">(select one)</option>
+                    <option value="onsite">Onsite</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="wfh">Permanent work from home</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>What mode of public transport do you take? Check all that apply.</label>
+                <label><input type="checkbox" id="jeepney" name="jeepney"/> Jeepney </label>
+                <label><input type="checkbox" id="cab" name="cab"/> Cab </label>                
+                <label><input type="checkbox" id="bus" name="bus"/> Bus </label>
+                <label><input type="checkbox" id="train" name="mrt"/> Train </label>
+                <label><input type="checkbox" id="tricycle" name="tricycle"/> Tricycle </label>
+                <label><input type="checkbox" id="bike" name="bike"/> Bike </label>
+            </div>
+            <div class="form-control">
+                <label for="experience">How is your commuting experience in the Philippines?</label>
+                <textarea name="experience" id="experience" placeholder="Enter your experience here..."></textarea>
+            </div>
+            <button type="submit" value="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
